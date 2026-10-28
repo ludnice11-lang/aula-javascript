@@ -1,0 +1,14 @@
+body {
+    background-color: lightyellow; /* Cor de fundo da página */
+    font-family: Arial;/* Tipo de fonte do texto */
+}
+
+h1 {
+    color: purple; /* Cor do título */
+}
+
+#mensagem {
+    color: blue; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+
+}
