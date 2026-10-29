@@ -25,3 +25,18 @@ console.log(estudando);
 document.getElementById("mensagem").textContent = "Olá, meu nome é " + nome;
 document.getElementById("mensagem").textContent = "Olá, meu nome é " + nome + " e tenho " + idade + " anos.";
 
+if (estudando) {
+    console.log("Continue assim");
+} else {
+    console.log("Que tal começar hoje?");
+}
+
+// Verifica se a idade é 18 ou mais
+if (idade >= 18) {
+    // Se for, escreve na página o "Olá" junto com "maior de idade"
+    document.getElementById("mensagem").textContent = "Olá, meu nome é " + nome + " e tenho " + idade + " anos. Você é maior de idade.";
+} else {
+    // Se não for, escreve o "Olá" junto com "menor de idade"
+    document.getElementById("mensagem").textContent = "Olá, meu nome é " + nome + " e tenho " + idade + " anos. Você é menor de idade.";
+}
+
