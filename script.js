@@ -1,4 +1,4 @@
-// VARIÁVEIS
+
 // Variável é um espaço onde podemos guardar um valor.
 
 // "let" é uma palavra-chave usada para declarar uma variável.
@@ -12,7 +12,6 @@ let nome = "Ludnice";
 let idade = 36;
 
 
-// CONSOLE.LOG
 // console.log() serve para mostrar uma informação no console.
 // Aqui estamos pedindo para mostrar o valor armazenado em "nome".
 console.log(nome);
@@ -38,5 +37,21 @@ if (idade >= 18) {
 } else {
     // Se não for, escreve o "Olá" junto com "menor de idade"
     document.getElementById("mensagem").textContent = "Olá, meu nome é " + nome + " e tenho " + idade + " anos. Você é menor de idade.";
+}
+
+
+// Primeiro teste: a idade é menor que 12?
+if (idade < 12) {
+    console.log("Você é uma criança");
+
+// Então só falta saber se é menor que 18.
+} else if (idade < 18) {
+    console.log("Você é adolescente");
+
+} else if (idade < 60) {
+    console.log("Você é adulta");
+// Se nenhuma condição acima foi verdadeira, a idade é 60 ou mais.
+} else {
+    console.log("Você é idosa");
 }
 
