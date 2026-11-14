@@ -55,3 +55,25 @@ if (idade < 12) {
     console.log("Você é idosa");
 }
 
+
+// Função é um bloco de código com um nome.
+// Guardamos as instruções uma vez e usamos quantas vezes quisermos.
+
+// "function" é a palavra-chave que cria uma função.
+// "saudar" é o nome que escolhemos para ela.
+// "pessoa" é um parâmetro: uma variável que recebe um valor quando a função é usada.
+function saudar(pessoa) {
+    // Tudo entre as chaves { } só roda quando a função é chamada.
+    console.log("Olá, " + pessoa + "!");
+}
+
+// Aqui chamamos a função (mandamos ela rodar).
+// O valor entre parênteses vai para dentro de "pessoa".
+saudar("Ludnice");
+
+// Mesma função, outro valor, outra mensagem.
+saudar("Maria");
+
+// Também podemos passar uma variável: aqui vai o valor guardado em "nome".
+saudar(nome);
+
