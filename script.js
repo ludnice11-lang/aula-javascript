@@ -76,4 +76,11 @@ saudar("Maria");
 
 // Também podemos passar uma variável: aqui vai o valor guardado em "nome".
 saudar(nome);
+// Função que troca o texto do parágrafo "mensagem"
+function mudarTexto() {
+    document.getElementById("mensagem").textContent = "Oi, " + nome + "! Você clicou no botão!";
+}
+// Quando o botão for clicado, a função mudarTexto vai rodar
+document.getElementById("botao").addEventListener("click", mudarTexto);
+
 
