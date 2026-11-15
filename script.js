@@ -82,5 +82,19 @@ function mudarTexto() {
 }
 // Quando o botão for clicado, a função mudarTexto vai rodar
 document.getElementById("botao").addEventListener("click", mudarTexto);
+// ARRAYS
+// Array é uma lista de valores guardada numa variável só
+
+let frutas = ["maçã", "banana", "uva"];
+console.log(frutas);
+// p/ pegar um item, usa o nome do array + o índice entre [ ]
+// a contagem começa do 0!
+console.log(frutas[0]);
+console.log(frutas[2]);
+// .length diz qtos itens tem no array
+console.log(frutas.length);
+// mostra a 1ª fruta na página, dentro do parágrafo c/ id="frutas"
+document.getElementById("frutas").textContent = "Minha fruta favorita é " + frutas[1];
+
 
 
