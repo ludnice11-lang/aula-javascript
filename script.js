@@ -85,7 +85,7 @@ document.getElementById("botao").addEventListener("click", mudarTexto);
 // ARRAYS
 // Array é uma lista de valores guardada numa variável só
 
-let frutas = ["maçã", "banana", "uva"];
+let frutas = ["maçã", "banana", "uva", "laranja", "abacaxi"];
 console.log(frutas);
 // p/ pegar um item, usa o nome do array + o índice entre [ ]
 // a contagem começa do 0!
@@ -95,6 +95,22 @@ console.log(frutas[2]);
 console.log(frutas.length);
 // mostra a 1ª fruta na página, dentro do parágrafo c/ id="frutas"
 document.getElementById("frutas").textContent = "Minha fruta favorita é " + frutas[1];
+
+// LAÇOS (repetição)
+// Um laço repete o mesmo código várias vezes.
+// O "for...of" passa por cada item do array, um de cada vez.
+
+// Leia assim: "para cada fruta da lista frutas, faça o que está entre { }"
+// "fruta" é uma variável nova: a cada volta, ela guarda um item diferente.
+for (let fruta of frutas) {
+    console.log("Eu gosto de " + fruta);
+}
+// laço que mostra todas as cores
+let cores = ["vermelho", "azul", "verde", "amarelo"];
+for (let cor of cores) {
+    console.log("Minha cor favorita é " + cor);
+}   
+
 
 
 
